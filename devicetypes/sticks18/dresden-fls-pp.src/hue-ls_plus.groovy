@@ -141,7 +141,8 @@ metadata {
         
         
 		main(["switch"])
-		details(["switch", "levelSliderControl", "refresh", "whiteLevelSliderControl", "whiteChannel", "colorName", "loop", "loopDir", "loopTimeControl"])
+		//details(["switch", "levelSliderControl", "refresh", "whiteLevelSliderControl", "whiteChannel", "colorName", "loop", "loopDir", "loopTimeControl"])
+		details(["switch", "levelSliderControl", "refresh", "colorName", "loop", "loopDir", "loopTimeControl"])
 	}
 }
 
