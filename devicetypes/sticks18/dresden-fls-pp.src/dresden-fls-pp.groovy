@@ -19,7 +19,7 @@
 
 metadata {
 	// Automatically generated. Make future change here.
-	definition (name: "Dresden FLS-PP", namespace: "sticks18", author: "Scott G") {
+	definition (name: "Philips Hue LightStrip Plus", namespace: "sticks18", author: "Scott G") {
 		capability "Switch Level"
 		capability "Actuator"
 		capability "Color Control"
@@ -116,13 +116,13 @@ metadata {
 		controlTile("levelSliderControl", "device.level", "slider", height: 2, width: 4, inactiveLabel: false) {
 			state "level", action:"switch level.setLevel"
 		}
-        controlTile("whiteLevelSliderControl", "device.whiteLevel", "slider", height: 2, width: 4, inactiveLabel: false, range: "(0..100)") {
+        /*controlTile("whiteLevelSliderControl", "device.whiteLevel", "slider", height: 2, width: 4, inactiveLabel: false, range: "(0..100)") {
             state "whiteLevel", action:"setWhiteLevel"
         }
         standardTile("whiteChannel", "device.whiteSwitch", height: 2, width: 2, inactiveLabel: false, decoration: "flat") {
             state "off", label: "White Off", action: "whiteOn", backgroundColor: "#ffffff"
             state "on", label: "White On", action: "whiteOff", backgroundColor: "#79b821"
-        }
+        }*/
         valueTile("colorName", "device.colorName", height: 2, width: 2, inactiveLabel: false, decoration: "flat") {
             state "colorName", label: '${currentValue}'
         }
